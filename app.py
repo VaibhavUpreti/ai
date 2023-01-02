@@ -12,6 +12,17 @@ st.sidebar.header('Data')
 image = Image.open('bb.jpg')
 st.image(image, '')
 
+st.markdown('A simple webapp that predicts net worth of basketball players in a season based on: rating and past performances')
+
+based_on = ['Rating - rating of the player', 'Jersey Number - which signifies level of player', 'Team - teams that have won previous championships tend to pay more',
+            'Playing Position - point guards are usually most paid', 'Country - country of the player', 'Draft Year - accounts inflation', 'Draft Peak']
+
+
+s2 = ''
+for i in based_on:
+  s2 += "- " + i + "\n"
+st.markdown(s2)
+
 
 all_teams = [
 'Atlanta Hawks',
