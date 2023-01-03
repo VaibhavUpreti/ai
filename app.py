@@ -59,11 +59,8 @@ all_teams = [
 s1 = ''
 z = 1
 
-
 # FUNCTION
 def user_report():
-
-
   rating = st.sidebar.slider('Rating', 50,100, 1 )
   jersey = st.sidebar.slider('Jersey Number', 0,100, 1 )
   #set_team = st.sidebar.multiselect('Team', sorted_unique_team, sorted_unique_team)
